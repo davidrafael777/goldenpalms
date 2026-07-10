@@ -76,6 +76,7 @@ const App: React.FC = () => {
             <a href="#ia-motores" onClick={scrollToSection('ia-motores')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Motores IA</a>
             <a href="#multilingue" onClick={scrollToSection('multilingue')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Multilingüe</a>
             <a href="#presupuesto" onClick={scrollToSection('presupuesto')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Inversión</a>
+            <a href="#propuesta-visual" onClick={scrollToSection('propuesta-visual')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Propuesta</a>
             <a 
               href="#comenzar" 
               onClick={scrollToSection('comenzar')} 
@@ -100,6 +101,7 @@ const App: React.FC = () => {
             <a href="#ia-motores" onClick={scrollToSection('ia-motores')} className="hover:text-nobel-gold transition-colors uppercase">Motores IA</a>
             <a href="#multilingue" onClick={scrollToSection('multilingue')} className="hover:text-nobel-gold transition-colors uppercase">Multilingüe</a>
             <a href="#presupuesto" onClick={scrollToSection('presupuesto')} className="hover:text-nobel-gold transition-colors uppercase">Inversión</a>
+            <a href="#propuesta-visual" onClick={scrollToSection('propuesta-visual')} className="hover:text-nobel-gold transition-colors uppercase">Propuesta Visual</a>
             <a 
               href="#comenzar" 
               onClick={scrollToSection('comenzar')} 
@@ -337,6 +339,33 @@ const App: React.FC = () => {
         <section id="presupuesto" className="py-24 md:py-32 bg-[#0A0A09]">
           <div className="container mx-auto px-6 max-w-6xl">
             <BudgetDistributionCalculator />
+          </div>
+        </section>
+
+        {/* Section 7.5: Propuesta Visual */}
+        <section id="propuesta-visual" className="py-24 md:py-32 bg-[#10100F] border-t border-stone-900 relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0A0A09] to-transparent pointer-events-none"></div>
+          
+          <div className="container mx-auto px-6 max-w-5xl relative z-10 text-center">
+            <span className="text-[10px] font-mono tracking-[0.25em] text-nobel-gold uppercase font-bold block mb-3">PRESENTACIÓN EXCLUSIVA</span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+              Propuesta Visual
+            </h2>
+            <div className="w-16 h-[1px] bg-nobel-gold mx-auto mb-10"></div>
+            
+            <p className="max-w-2xl mx-auto text-stone-400 text-sm md:text-base mb-12 leading-relaxed">
+              Visualiza en el siguiente video el concepto de diseño inmersivo de alta gama y la reingeniería comercial proyectada para el relanzamiento digital de Golden Palms Orlando.
+            </p>
+
+            <div className="relative aspect-video w-full rounded-2xl overflow-hidden border border-stone-800 bg-stone-950 shadow-[0_0_50px_rgba(197,160,89,0.06)]">
+              <iframe
+                src="https://www.youtube.com/embed/8AJeWR6t5pY"
+                title="Propuesta Visual - Golden Palms Orlando"
+                className="absolute inset-0 w-full h-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </div>
         </section>
 
